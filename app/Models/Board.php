@@ -31,4 +31,9 @@ class Board extends Model
                     ->withPivot('role')
                     ->withTimestamps();
     }
+
+      public function labels()
+    {
+        return $this->hasMany(Label::class);
+    }
 }
